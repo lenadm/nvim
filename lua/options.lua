@@ -8,6 +8,9 @@ vim.o.hlsearch = false
 -- Make line numbers default
 vim.wo.number = true
 
+-- Relative line numbers
+vim.o.relativenumber = true
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
@@ -16,8 +19,13 @@ vim.o.mouse = 'a'
 --  See `:help 'clipboard'`
 vim.o.clipboard = 'unnamedplus'
 
--- Enable break indent
-vim.o.breakindent = true
+-- Indenting setting
+vim.o.expandtab = false
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+
+-- Disable wrapping
+vim.o.wrap = false
 
 -- Save undo history
 vim.o.undofile = true
