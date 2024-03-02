@@ -33,6 +33,8 @@ require('lazy').setup({
     },
   },
 
+  {"shortcuts/no-neck-pain.nvim", version = "*"},
+
   {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
@@ -59,6 +61,12 @@ require('lazy').setup({
       -- Adds a number of user-friendly snippets
       'rafamadriz/friendly-snippets',
     },
+  },
+
+  {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" }
   },
 
   -- Useful plugin to show you pending keybinds.
