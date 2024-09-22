@@ -51,7 +51,4 @@ vim.o.termguicolors = true
 -- Set a colored line at 80 chars
 vim.o.colorcolumn = "80"
 
--- colorscheme
-vim.cmd.colorscheme('catppuccin')
-
 -- vim: ts=2 sts=2 sw=2 et

@@ -61,7 +61,7 @@ require('lazy').setup({
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   },
 
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "cpea2506/one_monokai.nvim" },
 
   {
     -- Set lualine as statusline
@@ -71,7 +71,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'catppuccin',
+        theme = 'auto',
         component_separators = '|',
         section_separators = '',
       },
