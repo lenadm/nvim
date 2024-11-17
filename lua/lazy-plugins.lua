@@ -60,7 +60,7 @@ require('lazy').setup({
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   },
 
-  { "rose-pine/neovim", name = "rose-pine" },
+  { "ellisonleao/gruvbox.nvim" },
 
   {
     -- Set lualine as statusline
