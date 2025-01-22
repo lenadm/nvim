@@ -2,6 +2,9 @@
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
+-- Sets cursor to always be in the center
+vim.o.scrolloff = 999
+
 -- Set highlight on search
 vim.o.hlsearch = false
 
