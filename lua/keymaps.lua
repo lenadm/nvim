@@ -13,4 +13,6 @@ vim.keymap.set("x", "<leader>d", [["_d]])
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
+vim.keymap.set("n", "Y", "y$")
+
 -- vim: ts=2 sts=2 sw=2 et
