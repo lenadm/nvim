@@ -14,5 +14,6 @@ vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 vim.keymap.set("n", "Y", "y$")
+vim.keymap.set("n", "Q", "@q")
 
 -- vim: ts=2 sts=2 sw=2 et
