@@ -23,8 +23,8 @@ vim.keymap.set("n", "<C-Up>", "<C-w>k")
 vim.keymap.set("n", "<C-Right>", "<C-w>l")
 
 -- better buffer navigation
-vim.keymap.set("n", "<C-b>n", ":bnext<CR>")
-vim.keymap.set("n", "<C-b>p", ":bprev<CR>")
-vim.keymap.set("n", "<C-b>d", ":bdelete<CR>")
+vim.keymap.set("n", "<leader>bn", ":bnext<CR>")
+vim.keymap.set("n", "<leader>bp", ":bprev<CR>")
+vim.keymap.set("n", "<leader>bd", ":bdelete<CR>")
 
 --.set vim: ts=2 sts=2 sw=2 et
