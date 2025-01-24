@@ -68,8 +68,6 @@ require 'treesitter-setup'
 -- (Language Server Protocol)
 require 'lsp-setup'
 
-require 'telescope-file-browser-setup'
-
 require 'colors'
 
 -- The line beneath this is called `modeline`. See `:help modeline`

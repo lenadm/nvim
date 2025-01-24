@@ -27,6 +27,15 @@ require('lazy').setup({
     },
   },
 
+  {
+   'stevearc/oil.nvim',
+   ---@module 'oil'
+   ---@type oil.SetupOpts
+   opts = {},
+   -- Optional dependencies
+   dependencies = { "nvim-tree/nvim-web-devicons" },
+   },
+
   {'tpope/vim-fugitive'},
 
   -- NOTE: This is where your plugins related to LSP can be installed.
@@ -46,11 +55,6 @@ require('lazy').setup({
 
   -- Useful plugin to show you pending keybinds.
   { 'folke/which-key.nvim', opts = {} },
-
-  {
-    "nvim-telescope/telescope-file-browser.nvim",
-    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-  },
 
   { "ellisonleao/gruvbox.nvim" },
 
