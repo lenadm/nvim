@@ -54,4 +54,6 @@ vim.o.termguicolors = true
 -- Set a colored line at 80 chars
 vim.o.colorcolumn = "80"
 
+vim.o.splitbelow = true
+vim.o.splitright = true
 -- vim: ts=2 sts=2 sw=2 et
