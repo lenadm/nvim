@@ -2,6 +2,8 @@
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
+vim.o.guicursor = "n-v-c-i:block"
+
 -- Sets cursor to always be in the center
 vim.o.scrolloff = 999
 
