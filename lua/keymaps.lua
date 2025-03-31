@@ -24,9 +24,16 @@ vim.keymap.set("n", "<C-Down>", "<C-w>j")
 vim.keymap.set("n", "<C-Up>", "<C-w>k")
 vim.keymap.set("n", "<C-Right>", "<C-w>l")
 
--- better buffer navigation
+-- Better buffer navigation
 vim.keymap.set("n", "<leader>bn", ":bnext<CR>")
 vim.keymap.set("n", "<leader>bp", ":bprev<CR>")
 vim.keymap.set("n", "<leader>bd", ":bdelete<CR>")
 
+-- Detour binds
+vim.keymap.set('n', '<c-w><enter>', ":Detour<cr>")
+vim.keymap.set('n', '<c-w>.', ":DetourCurrentWindow<cr>")
+
+-- jump to next error or warning
+vim.keymap.set('n', "<leader>n", function() vim.diagnostic.goto_next() end)
+vim.keymap.set('n', "<leader>N", function() vim.diagnostic.goto_prev() end)
 --.set vim: ts=2 sts=2 sw=2 et
