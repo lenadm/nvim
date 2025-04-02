@@ -34,6 +34,13 @@ vim.keymap.set('n', '<c-w><enter>', ":Detour<cr>")
 vim.keymap.set('n', '<c-w>.', ":DetourCurrentWindow<cr>")
 
 -- jump to next error or warning
-vim.keymap.set('n', "<leader>n", function() vim.diagnostic.goto_next() end)
-vim.keymap.set('n', "<leader>N", function() vim.diagnostic.goto_prev() end)
+vim.keymap.set('n', "<leader>n", function() vim.diagnostic.jump({count = 1,  float = true}) end)
+vim.keymap.set('n', "<leader>N", function() vim.diagnostic.jump({count = -1, float = true}) end)
+
+-- saving binds
+vim.keymap.set('n', "<leader>ww", ':w<CR>')
+vim.keymap.set('n', "<leader>q", ':q<CR>')
+vim.keymap.set('n', "<leader>wq", ':wq<CR>')
+vim.keymap.set('n', "<leader>so", ':source<CR>')
+
 --.set vim: ts=2 sts=2 sw=2 et

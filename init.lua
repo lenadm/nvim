@@ -68,6 +68,8 @@ require 'treesitter-setup'
 -- (Language Server Protocol)
 require 'lsp-setup'
 
+require 'nvim-cmp'
+
 require 'colors'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
