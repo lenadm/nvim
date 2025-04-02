@@ -17,11 +17,6 @@ cmp.setup {
         ['<Tab>'] = cmp.mapping.confirm { select = true },
         ['<Down>'] = cmp.mapping.select_next_item(),
         ['<Up>'] = cmp.mapping.select_prev_item(),
-
-        -- ['<CR>'] = cmp.mapping.confirm { select = true },
-        -- ['<Tab>'] = cmp.mapping.select_next_item(),
-        -- ['<S-Tab>'] = cmp.mapping.select_prev_item(),
-
         ['<Right>'] = cmp.mapping(function()
             if luasnip.expand_or_locally_jumpable() then
                 luasnip.expand_or_jump()

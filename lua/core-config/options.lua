@@ -1,7 +1,3 @@
--- [[ Setting options ]]
--- See `:help vim.o`
--- NOTE: You can change these options as you wish!
-
 -- Sets cursor to always be in the center
 vim.o.scrolloff = 999
 
@@ -18,8 +14,6 @@ vim.o.relativenumber = true
 vim.o.mouse = 'a'
 
 -- Sync clipboard between OS and Neovim.
---  Remove this option if you want your OS clipboard to remain independent.
---  See `:help 'clipboard'`
 vim.o.clipboard = 'unnamedplus'
 
 -- Indenting setting
@@ -45,10 +39,8 @@ vim.wo.signcolumn = 'yes'
 vim.o.updatetime = 250
 vim.o.timeoutlen = 300
 
--- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
 
--- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
 -- Set a colored line at 80 chars
@@ -56,8 +48,3 @@ vim.o.colorcolumn = "80"
 
 vim.o.splitbelow = true
 vim.o.splitright = true
-
-vim.diagnostic.config({
-    virtual_lines = true
-})
--- vim: ts=2 sts=2 sw=2 et
