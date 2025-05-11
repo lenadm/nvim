@@ -22,8 +22,10 @@ vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.smarttab = true
 
--- Disable wrapping
-vim.o.wrap = false
+-- Enable wrapping
+vim.o.wrap = true
+vim.o.linebreak = true
+vim.o.breakindent = true
 
 -- Save undo history
 vim.o.undofile = true
@@ -48,3 +50,8 @@ vim.o.colorcolumn = "80"
 
 vim.o.splitbelow = true
 vim.o.splitright = true
+
+-- set default windows shell to powershell
+if vim.fn.has('win32') or vim.fn.has('win64') then
+    vim.o.shell = 'powershell.exe'
+end
