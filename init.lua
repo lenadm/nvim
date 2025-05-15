@@ -1,6 +1,10 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-require 'plugin-manager'
-require 'editor-intelligence'
-require 'core-config'
+require("core.options")
+require("core.keymaps")
+require("core.colors")
+
+require("plugins")
+
+require("plugin-keymaps")

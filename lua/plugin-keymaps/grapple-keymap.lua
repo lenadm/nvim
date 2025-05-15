@@ -1,4 +1,4 @@
-vim.keymap.set('n', "<leader>at", "<cmd>Grapple toggle<cr>",         {desc="Tag a file"})
+vim.keymap.set('n', "<leader>ft", "<cmd>Grapple toggle<cr>",         {desc="Tag a file"})
 vim.keymap.set('n', "<leader>lt", "<cmd>Grapple toggle_tags<cr>",    {desc="Toggle tags list"})
 vim.keymap.set('n', "<leader>0",  "<cmd>Grapple select index=1<cr>", {desc="Select first tag"})
 vim.keymap.set('n', "<leader>1",  "<cmd>Grapple select index=2<cr>", {desc="Select second tag"})

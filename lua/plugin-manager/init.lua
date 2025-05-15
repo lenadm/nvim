@@ -1,7 +1,0 @@
-require("plugin-manager.bootstrap")
-require("plugin-manager.plugins")
-require("plugin-manager.oil-setup")
-require("plugin-manager.telescope-setup")
-require("plugin-manager.grapple-setup")
-require("plugin-manager.lualine-setup")
-require("plugin-manager.gruvbox-setup")

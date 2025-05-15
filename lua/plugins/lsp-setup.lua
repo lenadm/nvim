@@ -16,5 +16,3 @@ require('neodev').setup()
 require('mason-lspconfig').setup {
     ensure_installed = vim.tbl_keys(servers),
 }
-
-require("keymaps.lsp-keymap")

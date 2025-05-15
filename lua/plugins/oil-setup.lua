@@ -4,5 +4,3 @@ require("oil").setup({
         case_insensitive = true,
     }
 })
-
-require("keymaps.oil-keymap")
