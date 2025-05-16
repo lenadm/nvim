@@ -7,6 +7,7 @@ require('lazy').setup({
     'tpope/vim-fugitive',
     "cbochs/grapple.nvim",
 
+
     {
         "m4xshen/autoclose.nvim",
         config = (function() require("autoclose").setup() end)
@@ -54,6 +55,7 @@ require('lazy').setup({
         branch = '0.1.x',
         dependencies = {
             'nvim-lua/plenary.nvim',
+            'debugloop/telescope-undo.nvim',
             {
                 'nvim-telescope/telescope-fzf-native.nvim',
                 build = 'make',

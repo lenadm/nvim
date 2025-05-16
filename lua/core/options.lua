@@ -52,6 +52,8 @@ opt.colorcolumn = "80"
 opt.splitbelow = true
 opt.splitright = true
 
+opt.undofile = true
+
 -- set default windows shell to powershell
 if vim.fn.has('win32') or vim.fn.has('win64') then
     opt.shell = 'powershell.exe'

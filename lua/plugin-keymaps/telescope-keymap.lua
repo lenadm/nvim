@@ -52,3 +52,4 @@ vim.keymap.set('n', '<leader>gs', require('telescope.builtin').live_grep,   { de
 vim.keymap.set('n', '<leader>Gs', telescope_live_grep_git_root,             { desc = '[G]it Root [G]rep [s]earch' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume,      { desc = '[S]earch [R]esume' })
+vim.keymap.set('n', '<leader>su', "<cmd>Telescope undo<cr>",                { desc = '[S]earch [U]ndotree' })
