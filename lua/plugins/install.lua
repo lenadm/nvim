@@ -7,7 +7,6 @@ require('lazy').setup({
     'tpope/vim-fugitive',
     "cbochs/grapple.nvim",
 
-
     {
         "m4xshen/autoclose.nvim",
         config = (function() require("autoclose").setup() end)

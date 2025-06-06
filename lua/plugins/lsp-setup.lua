@@ -11,6 +11,8 @@ local servers = {
     },
 }
 
+vim.lsp.enable('glsl_analyzer')
+
 require('neodev').setup()
 
 require('mason-lspconfig').setup {

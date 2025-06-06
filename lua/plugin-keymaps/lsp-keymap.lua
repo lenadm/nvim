@@ -1,9 +1,9 @@
 -- goto lsp keymaps
-vim.keymap.set('n', 'gd', require('telescope.builtin').lsp_definitions, {desc='[G]oto [D]efinition'})
-vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, {desc='[G]oto [R]eferences'})
-vim.keymap.set('n', 'gi', require('telescope.builtin').lsp_implementations, {desc='[G]oto [I]mplementation'})
+vim.keymap.set('n', '<leader>gd', require('telescope.builtin').lsp_definitions, {desc='[G]oto [D]efinition'})
+vim.keymap.set('n', '<leader>gD', vim.lsp.buf.declaration, {desc='[G]oto [D]eclaration'})
+vim.keymap.set('n', '<leader>gr', require('telescope.builtin').lsp_references, {desc='[G]oto [R]eferences'})
+vim.keymap.set('n', '<leader>gi', require('telescope.builtin').lsp_implementations, {desc='[G]oto [I]mplementation'})
 vim.keymap.set('n', '<leader>ls', require('telescope.builtin').lsp_document_symbols, {desc='[L]ist [S]ymbols'})
-vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {desc='[G]oto [D]eclaration'})
 
 -- documentation lsp keymaps
 vim.keymap.set('n', '<leader>D', require('telescope.builtin').lsp_type_definitions, {desc='Type [D]efinition'})
@@ -12,7 +12,7 @@ vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, {desc='Signature Docume
 
 -- refactor lsp keymaps
 vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {desc='[R]e[n]ame'})
-vim.keymap.set('n', '<leader>ca', function()
+vim.keymap.set('n', '<M-CR>', function()
     vim.lsp.buf.code_action { context = { only = { 'quickfix', 'refactor', 'source' } } }
 end, {desc='[C]ode [Action]'})
 

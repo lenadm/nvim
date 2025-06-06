@@ -8,3 +8,5 @@ require("core.colors")
 require("plugins")
 
 require("plugin-keymaps")
+
+require("file-types")

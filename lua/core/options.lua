@@ -47,7 +47,7 @@ opt.completeopt = 'menuone,noselect'
 opt.termguicolors = true
 
 -- Set a colored line at 80 chars
-opt.colorcolumn = "80"
+opt.colorcolumn = "79"
 
 opt.splitbelow = true
 opt.splitright = true
